@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		265E1E3620716C9B00380D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E1E3520716C9B00380D60 /* AppDelegate.swift */; };
-		265E1E3820716C9B00380D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E1E3720716C9B00380D60 /* ViewController.swift */; };
+		265E1E3820716C9B00380D60 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E1E3720716C9B00380D60 /* CardsViewController.swift */; };
 		265E1E3B20716C9B00380D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265E1E3920716C9B00380D60 /* Main.storyboard */; };
 		265E1E3D20716C9B00380D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 265E1E3C20716C9B00380D60 /* Assets.xcassets */; };
 		265E1E4020716C9B00380D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 265E1E3E20716C9B00380D60 /* LaunchScreen.storyboard */; };
+		265E1E482071EAC400380D60 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265E1E472071EAC400380D60 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		265E1E3220716C9B00380D60 /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		265E1E3520716C9B00380D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		265E1E3720716C9B00380D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		265E1E3720716C9B00380D60 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		265E1E3A20716C9B00380D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		265E1E3C20716C9B00380D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		265E1E3F20716C9B00380D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		265E1E4120716C9B00380D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		265E1E472071EAC400380D60 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,22 @@
 			isa = PBXGroup;
 			children = (
 				265E1E3520716C9B00380D60 /* AppDelegate.swift */,
-				265E1E3720716C9B00380D60 /* ViewController.swift */,
+				265E1E492071EAF900380D60 /* View Controllers */,
 				265E1E3920716C9B00380D60 /* Main.storyboard */,
 				265E1E3C20716C9B00380D60 /* Assets.xcassets */,
 				265E1E3E20716C9B00380D60 /* LaunchScreen.storyboard */,
 				265E1E4120716C9B00380D60 /* Info.plist */,
 			);
 			path = Tinder;
+			sourceTree = "<group>";
+		};
+		265E1E492071EAF900380D60 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				265E1E472071EAC400380D60 /* ProfileViewController.swift */,
+				265E1E3720716C9B00380D60 /* CardsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				265E1E3820716C9B00380D60 /* ViewController.swift in Sources */,
+				265E1E482071EAC400380D60 /* ProfileViewController.swift in Sources */,
+				265E1E3820716C9B00380D60 /* CardsViewController.swift in Sources */,
 				265E1E3620716C9B00380D60 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7Y4BJK58A;
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CST495Homework.Tinder;
@@ -289,6 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7Y4BJK58A;
 				INFOPLIST_FILE = Tinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CST495Homework.Tinder;
